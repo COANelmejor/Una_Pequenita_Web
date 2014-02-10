@@ -1,1 +1,88 @@
-style
+body
+{
+	background: rgb(200,255,255);
+	color:rgb(20,20,0);
+	font-family: 'Eagle Lake', cursive;
+	font-size: 16px;
+}
+nav ul .img_d
+{
+	display: none;
+}
+h1
+{
+	font-size: 3em;
+	font-family: 'Berkshire Swash', cursive;
+}
+header
+{
+	padding: 1.5em;
+}
+nav ul
+{
+	padding: 0;	
+	background: red;
+}
+nav ul li
+{
+	background: yellow;
+	border-radius: 4px 8px;
+	display: inline-block;
+	list-style: none;
+	margin:0.5em;
+	padding: 0.5em;
+	text-align: center;
+          transition: all 0.3s cubic-bezier(.62,.36,.38,.87);
+       -o-transition: all 0.3s cubic-bezier(.62,.36,.38,.87); 
+      -ms-transition: all 0.3s cubic-bezier(.62,.36,.38,.87); 
+     -moz-transition: all 0.3s cubic-bezier(.62,.36,.38,.87); 
+  -webkit-transition: all 0.3s cubic-bezier(.62,.36,.38,.87); 
+}
+nav ul li:hover
+{
+	background: white;
+          transform: rotate(-15deg);
+       -o-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+     -moz-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+};
+
+nav ul li a
+{
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}
+
+@media screen and (max-width: 768px){
+	nav ul li
+	{
+		width: 49%;
+		margin-left: 0;
+		display: block;
+	}
+	nav ul .img_d
+	{
+		width: 44%;
+		height: 216px;
+		margin: 0 0;
+		padding: 1em;
+		background: black;
+		display: inherit;
+		float: right;
+		vertical-align: top;
+		right: 0;
+	}
+	nav ul li:hover
+{
+	background: white;
+          transform: rotate(1deg);
+       -o-transform: rotate(1deg);
+      -ms-transform: rotate(1deg);
+     -moz-transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
+};
+
+}
+
